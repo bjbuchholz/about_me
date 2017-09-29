@@ -2,8 +2,9 @@
 
 var userPoints = 0;
 
-console.log('hello yawllll');
-alert('Welcome to my guessing game!');
+var user = prompt('What is your name?');
+console.log('The user\'s name is ' + user);
+alert('Hello ' + user + 'Welcome to my guessing game!' );
 
 var user = prompt('What is your name?');
 alert('Hi ' + user + '! I am so glad you want to play my game.');
