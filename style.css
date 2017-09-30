@@ -1,8 +1,41 @@
 * {
   font-family: sans-serif;
-  background-color: yellow;
+  background-color: black;
 }
 
 h1 {
-  color:black;
+  color:white;
+  border-style: double;
+  padding: 20px 30px 100px 100px;
+  border-color: black;
+  background-image: url('bmw-background.jpg');
+  background-position: center;
+  background-size: cover;
 }
+
+ul {
+  color: cyan;
+  font-size: 30px;
+  margin: 0px ;
+  padding: 0px;
+  overflow: hidden;
+  letter-spacing:normal;
+
+}
+
+li {
+  display: inline;
+  float: left;
+  margin: 5px ;
+  padding: 5px;
+  border-style: groove;
+  border-width: medium;
+  border-color: red;
+  border-spacing: 0px;
+  background-color: black;
+}
+
+
+footer p {
+  color: white;
+  text-align: center;
