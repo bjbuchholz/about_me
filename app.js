@@ -2,14 +2,14 @@
 
 var userPoints = 0;
 
-console.log('Hello');
+/*console.log('Hello');
 alert('Welcome to my guessing game!');
 
 var user = prompt('What is your name?');
 while (!user) {
   user = prompt('Before we can move on my game, I need to know your name. Please enter below! ');
 }if (user !== 'Brandon') {
-  alert('That\'s a nice name ;) thank\'s for entering it. ');
+  alert('Nice to meet you ' + user + '. ');
 }
 console.log('The user\'s name is ' + user);
 alert('Hi ' + user + '! I am so glad you want to play my game.');
@@ -25,7 +25,7 @@ if(answer === 'yes' || answer === 'y') {
 }
 
 //Question 2
-var answer2 = prompt('Ok ' + user + ', let\'s switch gears, do you think I like Spicy food? Please respond yes or no. ').toLowerCase();
+var answer2 = prompt('Ok ' + user + ', let\'s switch gears, do you think I like Spicy foods? Please respond yes or no. ').toLowerCase();
 console.log(user + ' answered ' + answer2 + ' for question 2. ');
 if(answer2 === 'yes' || answer2 === 'y') {
   userPoints++;
@@ -59,26 +59,36 @@ var answer5 = prompt('Alright ' + user + ', do you think I have any kids? Please
 console.log(user + ' answered ' + answer5 + ' for question 5. ');
 if( answer5 === 'yes' || answer5 === 'y') {
   userPoints++;
-  alert('You got it!!! I have a wonderful 4 year old daughter that keeps me really busy. \nYou now have ' + userPoints + ' point(s) for my game, thanks for playing ' + user + '!' );
+  alert('You got it!!! I have a wonderful 4 year old daughter that keeps me really busy. \nYou now have ' + userPoints + ' point(s)' );
 } else {
-  alert('I do in fact have a wonderful 4 year old daughter that keeps me really busy these days.  \nYou still ' + userPoints + ' point(s) for my game, ' + user + '!');
-}
+  alert('I do in fact have a wonderful 4 year old daughter that keeps me really busy these days.  \nYou still have ' + userPoints + ' point(s)' );
+}*/
 
-//Question6
-for (var i = 0; i <= 34; i++) {
-  var myAge = parseInt(prompt('Can you guess how old I am? '));
+//Question6-    *need to stop loop after 4 attempts, keeps looping even if the correct answer is given, also something is wrong with the last }. When I remove it has fatal error? also will not prompt question 7.*
+for (var i = 0; i < 4; i++) {
+  if (i === 4) { break; }
+  var myAge = parseInt(prompt('Can you guess how old I am? I will give you 4 tries. ' ));
   console.log('myAge is; ' + myAge);
   if (myAge < 34) {
-    alert ('I\'m older than that... ');
+    alert ('I\'m older than that...guess again ');
   } else if (myAge > 34) {
-    alert ('I am not that old... ');
+    alert ('I am not that old... guess again ');
   } else if (myAge === 34) {
-    alert ('Yay you got it!');
-    correctCounter += 1;
+    userPoints++;
+    alert ('Yay you got it! \nYou now have ' + userPoints + ' point(s). ');
+    //correctCounter += 1;
   } else {
-    alert('Did you take a guess? ');
+    alert ('Did you take a guess? ');
   }
-  if (i >= 34) {
-    alert('Getting closer to 40 :\()');
+}
+//Question7
+var favoriteCars = ['BMW', 'AUDI', 'VOLKSWAGEN', 'PORSCHE', 'JEEP' ].toLowerCase();
+for (var j = 0; j < favoriteCars.length; i++) {
+  console.log(favoriteCars[j]);
+  var answer7 = prompt('Last question, can you name one of my top 5 favorite car manufactuers? ');
+  if (favoriteCars === [j]); {
+    alert ('You guessed correct ');
+  //} else if () {
   }
+  //alert ('I hope you enjoyed my game, you finished with ' + userPoints + '. Great job ' + user + ', I hope you enjoyed getting to know me better. ');
 }
