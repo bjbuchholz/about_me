@@ -24,15 +24,14 @@ ul {
 }
 
 li {
-  display: inline;
+  display: inline-block;
   float: left;
-  margin: 5px ;
+  margin: 0;
   padding: 5px;
   border-style: groove;
-  border-width: medium;
   border-color: red;
-  border-spacing: 0px;
-  background-color: grey;
+  border-spacing: 20px;
+  background-color: black;
 }
 
 

@@ -7,7 +7,8 @@ alert('Welcome to my guessing game!');
 var user = prompt('What is your name?');
 while (!user) {
   user = prompt('Before we can move on my game, I need to know your name. Please enter below! ');
-}if (user !== 'Brandon') {
+}
+if (user !== 'Brandon') {
   alert('Nice to meet you ' + user + '. ');
 }
 console.log('The user\'s name is ' + user);
@@ -64,9 +65,9 @@ if( answer5 === 'yes' || answer5 === 'y') {
 }
 
 //Question6-    *need to stop loop after 4 attempts, keeps looping even if the correct answer is given, also something is wrong with the last }. When I remove it has fatal error? also will not prompt question 7.*
+
 for (var i = 0; i < 4; i++ ) {
-  if (i === 4) { break; }
-  var myAge = parseInt(prompt('Can you guess how old I am? I will give you 4 tries. ' ));
+  var myAge = parseInt(prompt('Can you guess how old I am? ' ));
   console.log('myAge is; ' + myAge);
   if (myAge < 34 ) {
     alert ('I\'m older than that...guess again. ');
@@ -75,19 +76,22 @@ for (var i = 0; i < 4; i++ ) {
   } else if (myAge === 34 ) {
     userPoints++;
     alert ('Yay you got it! \nYou now have ' + userPoints + ' point(s). ');
-    //correctCounter += 1;
+    i = 4;
   } else {
     alert ('Did you take a guess? ');
   }
 }
 //Question7
-var favoriteCars = ['BMW', 'AUDI', 'VOLKSWAGEN', 'PORSCHE', 'JEEP' ].toLowerCase();
-for (var j = 0; j < favoriteCars.length; i++) {
-  console.log(favoriteCars[j]);
-  var answer7 = prompt('Last question, can you name one of my top 5 favorite car manufactuers? ');
-  if (favoriteCars === [j]); {
-    alert ('You guessed correct. ');
-  //} else if () {
-  }
-  alert ('I hope you enjoyed my game, you finished with ' + userPoints + '. Great job ' + user + '. ');
+
+for (var j = 0; j < favoriteCars.length; j++) {
+  var favoriteCars = ['BMW', 'AUDI', 'VOLKSWAGEN', 'PORSCHE', 'JEEP' ];
+  var answer7 = prompt('Last question, can you name one of my top 5 favorite cars manufactuers? ').toLowerCase();
+  console.log('My favorite car manufactuers are: ' + favoriteCars[j]);
 }
+//   if (favoriteCars === [j]); {
+//     alert ('You guessed correct. ');
+//   } else if (); {
+//     alert ('Keep quessing')
+//} else
+//alert ('I hope you enjoyed my game, you finished with ' + userPoints + '. Great job ' + user + '. ');
+//console.console.log('Game Over! ');
