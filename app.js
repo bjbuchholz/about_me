@@ -1,18 +1,18 @@
-'use strict';
-
-var userPoints = 0;
-console.log('Hello');
-alert('Welcome to my guessing game!');
-
-var user = prompt('What is your name?');
-while (!user) {
-  user = prompt('Before we can move on my game, I need to know your name. Please enter below! ');
-}
-if (user !== 'Brandon') {
-  alert('Nice to meet you ' + user + '\nLet\'s get started. ');
-}
-console.log('The user\'s name is ' + user);
-
+// 'use strict';
+//
+// var userPoints = 0;
+// console.log('Hello');
+// alert('Welcome to my guessing game!');
+//
+// var user = prompt('What is your name?');
+// while (!user) {
+//   user = prompt('Before we can move on my game, I need to know your name. Please enter below! ');
+// }
+// if (user !== 'Brandon') {
+//   alert('Nice to meet you ' + user + '\nLet\'s get started. ');
+// }
+// console.log('The user\'s name is ' + user);
+//
 // //Question 1
 // var answer = prompt('First question, do you think I am a car guy? Please respond yes or no. ').toLowerCase();
 // console.log(user + ' answered ' + answer + ' for question 1. ');
@@ -62,47 +62,47 @@ console.log('The user\'s name is ' + user);
 // } else {
 //   alert('I do in fact have a wonderful 4 year old daughter that keeps me really busy these days.  \nYou still have ' + userPoints + ' point(s)' );
 // }
-
-//Question6-    *need to stop loop after 4 attempts, keeps looping even if the correct answer is given, also something is wrong with the last }. When I remove it has fatal error? also will not prompt question 7.*
-
-for (var i = 0; i < 4; i++ ) {
-  var myAge = parseInt(prompt('Can you guess how old I am? \nI will give you 4 tries. ' ));
-  console.log('My age is; ' + myAge);
-  if (myAge < 34 ) {
-    alert ('I\'m older than that...guess again. ');
-  } else if (myAge > 34 ) {
-    alert ('I am not that old... guess again. ');
-  } else if (myAge === 34 ) {
-    userPoints++;
-    alert ('Yay you got it! \nYou now have ' + userPoints + ' point(s). ');
-    console.log(user + ' guessed my age = ' + myAge);
-    i = 4;
-  } else {
-    alert ('Did you take a guess? ');
-  }
-}
-//Question7
-var favoriteCars = ['bmw', 'audi', 'volkswagen', 'porsche', 'jeep' ];
-var question7Tries = 6;
-console.log('question7 ***** ', question7);
-var question7 = prompt('Last question, can you name one of my 5 favorite cars brands? \nYou will get 6 tries this time. ').toLowerCase();
-console.log('My favorite car brands are: ' + favoriteCars);
-while (question7Tries > 0) {
-  if (favoriteCars.indexOf(question7) > - 1) {
-    alert('Yay you got it! \nMy 5 favorite car brands are ' + favoriteCars + '\nYour final score is ' + userPoints + ' out of 7 for my game. Thanks for playing! ');
-    console.log(user + 'guessed 1 of my favorite car brands');
-    userPoints++;
-    question7Tries = - 1;
-  } else {
-    question7Tries = question7Tries - 1;
-    question7 = prompt('Try again. You have ' + question7Tries + ' tries left after this.').toLowerCase();
-    console.log('User is asked question 7 again. ' + question7Tries + ' left.' );
-  }
-}
-
-if (question7Tries === 0){
-  alert('No more tries left. My 5 favorite car brands are ' + favoriteCars);
-  console.log('User ran out of tries. ');
-}
-//alert ('I hope you enjoyed my game, you finished with ' + userPoints + '. Great job ' + user + '. ');
-//console.console.log('Game Over! ');
+//
+// //Question6-
+//
+// for (var i = 0; i < 4; i++ ) {
+//   var myAge = parseInt(prompt('Can you guess how old I am? ' ));
+//   console.log('My age is; ' + myAge);
+//   if (myAge < 34 ) {
+//     alert ('I\'m older than that...guess again. ');
+//   } else if (myAge > 34 ) {
+//     alert ('I am not that old... guess again. ');
+//   } else if (myAge === 34 ) {
+//     userPoints++;
+//     alert ('Yay you got it! \nYou now have ' + userPoints + ' point(s). ');
+//     console.log(user + ' guessed my age = ' + myAge);
+//     i = 4;
+//   } else {
+//     alert ('Did you take a guess? ');
+//   }
+// }
+//
+// //Question7
+//
+// var favoriteCars = ['bmw', 'audi', 'volkswagen', 'porsche', 'jeep' ];
+// var question7Tries = 6;
+// console.log('question7 ***** ', question7);
+// var question7 = prompt('Last question, can you name one of my 5 favorite cars brands? \nYou will get 6 tries this time. ').toLowerCase();
+// console.log('My favorite car brands are: ' + favoriteCars);
+// while (question7Tries > 0) {
+//   if (favoriteCars.indexOf(question7) > - 1) {
+//     alert('Yay you got it! \nMy 5 favorite car brands are ' + favoriteCars + '\nYour final score is ' + userPoints + ' out of 7 for my game. Thanks for playing! ');
+//     console.log(user + 'guessed 1 of my favorite car brands');
+//     userPoints++;
+//     question7Tries = - 1;
+//   } else {
+//     question7Tries = question7Tries - 1;
+//     question7 = prompt('Try again. You have ' + question7Tries + ' tries left after this.').toLowerCase();
+//     console.log('User is asked question 7 again. ' + question7Tries + ' left.' );
+//   }
+// }
+//
+// if (question7Tries === 0){
+//   alert('No more tries left. My 5 favorite car brands are ' + favoriteCars);
+//   console.log('User ran out of tries. ');
+// }

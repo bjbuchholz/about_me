@@ -1,39 +1,42 @@
 * {
   font-family: sans-serif;
-  background-color: black;
+  background-color: #DAE5E8;
 }
 
 h1 {
   color:white;
-  border-style: double;
+  border-radius: 20px;
+  border-style: inset;
   padding: 20px 30px 100px 100px;
   border-color: black;
-  background-image: url('bmw-background.jpg');
+  position: static;
+  background-image: url('images/mountain-road-background.jpg');
   background-position: center;
   background-size: cover;
 }
-
-ul {
-  color: cyan;
-  font-size: 30px;
-  margin: 0px ;
-  padding: 0px;
-  overflow: hidden;
-  letter-spacing:normal;
-
-}
-
-li {
-  display: inline-block;
-  float: left;
-  margin: 0;
-  padding: 5px;
-  border-style: groove;
-  border-color: red;
-  border-spacing: 20px;
+#nav {
+  color: black;
+  font-size: 25px;
+  width: 90;
+  position: relative;
+  margin:10px;
+  padding: 10px 10px 10px 10px;
+  border-style: double;
+  border-radius: 20px;
   background-color: black;
 }
-
+p {
+  font-size: 15px;
+}
+#top5{
+  color: black;
+  font-size: 15px;
+  margin: 25px ;
+  padding: 20px;
+  overflow: hidden;
+  letter-spacing:normal;
+  display: inline-block;
+}
 
 footer p {
   color: white;
