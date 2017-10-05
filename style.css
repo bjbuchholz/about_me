@@ -10,7 +10,7 @@ h1 {
   padding: 20px 30px 100px 100px;
   border-color: black;
   position: static;
-  background-image: url('images/mountain-road-background.jpg');
+  background-image: url('img/mountain-road-background.jpg');
   background-position: center;
   background-size: cover;
 }
