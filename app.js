@@ -49,16 +49,18 @@ function askIsSpicyFoodLover() {
   }
 }
 
-// //Question 3
-// var answer3 = prompt('Do you think I am a fan of scary movies ' + user + '? Please respond yes or no. ').toLowerCase();
-// console.log(user + ' answered ' + answer3 + ' for question 3. ');
-// if( answer3 === 'no' || answer3 === 'n') {
-//   userPoints++;
-//   alert('You got it!! I am not a big horror genre fan. \nYou now have ' + userPoints + ' point(s).');
-// } else {
-//   alert('Actually I am not a fan, while I love all movies, the Scary ones I tend to skip. \nYou still have ' + userPoints + ' point(s).');
-// }
-//
+// Question 3
+function askIsScaryMovieLover() {
+  var answer3 = prompt('Do you think I am a fan of scary movies ' + user + '? Please respond yes or no. ').toLowerCase();
+  console.log(user + ' answered ' + answer3 + ' for question 3. ');
+  if( answer3 === 'no' || answer3 === 'n') {
+    userPoints++;
+    alert('You got it!! I am not a big horror genre fan. \nYou now have ' + userPoints + ' point(s).');
+  } else {
+    alert('Actually I am not a fan, while I love all movies, the Scary ones I tend to skip. \nYou still have ' + userPoints + ' point(s).');
+  }
+}
+
 // //Question 4
 // var answer4 = prompt('Ok ' + user + ', am I originally from the west coast? Please respond yes or no.').toLowerCase();
 // console.log(user + ' answered ' + answer4 + ' for question 4. ');
