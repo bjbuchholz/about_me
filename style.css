@@ -1,5 +1,5 @@
 * {
-  font-family: sans-serif;
+  font-family: Montserrat, sans-serif;
   background-color: #DAE5E8;
 }
 
@@ -14,12 +14,15 @@ h1 {
   background-position: center;
   background-size: cover;
 }
+#me{
+  margin: 10px 470px;
+}
 #nav {
   color: black;
   font-size: 25px;
-  width: 90;
+  width: 800px;
   position: relative;
-  margin:10px;
+  margin: 10px 200px;
   padding: 10px 10px 10px 10px;
   border-style: double;
   border-radius: 20px;
@@ -39,5 +42,5 @@ p {
 }
 
 footer p {
-  color: white;
+  color: #001397;
   text-align: center;
