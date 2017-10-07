@@ -47,6 +47,8 @@ function askIsSpicyFoodLover() {
   } else {
     alert('Actually, I do love spicy food, the spicier the better I say. \nYou still have ' + userPoints + ' point(s).');
   }
+
+  askIsScaryMovieLover();
 }
 
 // Question 3
@@ -59,18 +61,22 @@ function askIsScaryMovieLover() {
   } else {
     alert('Actually I am not a fan, while I love all movies, the Scary ones I tend to skip. \nYou still have ' + userPoints + ' point(s).');
   }
+
+  askOriginLocation();
 }
 
-// //Question 4
-// var answer4 = prompt('Ok ' + user + ', am I originally from the west coast? Please respond yes or no.').toLowerCase();
-// console.log(user + ' answered ' + answer4 + ' for question 4. ');
-// if( answer4 === 'no' || answer4 === 'n') {
-//   userPoints++;
-//   alert('That\'s correct ' + user + ', I moved to Seattle about 7 years ago from North Carolina.  \nYou now have ' + userPoints + ' point(s).');
-// } else {
-//   alert('While I do consider Seattle my forever home, I am an east coast transplant. \nYou still have ' + userPoints + ' point(s).');
-// }
-//
+// Question 4
+function askOriginLocation() {
+  var answer4 = prompt('Ok ' + user + ', am I originally from the west coast? Please respond yes or no.').toLowerCase();
+  console.log(user + ' answered ' + answer4 + ' for question 4. ');
+  if( answer4 === 'no' || answer4 === 'n') {
+    userPoints++;
+    alert('That\'s correct ' + user + ', I moved to Seattle about 7 years ago from North Carolina.  \nYou now have ' + userPoints + ' point(s).');
+  } else {
+    alert('While I do consider Seattle my forever home, I am an east coast transplant. \nYou still have ' + userPoints + ' point(s).');
+  }
+}
+
 // //Question 5
 // var answer5 = prompt('Alright ' + user + ', do you think I have any kids? Please respond yes or no. ').toLowerCase();
 // console.log(user + ' answered ' + answer5 + ' for question 5. ');
