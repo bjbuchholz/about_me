@@ -83,32 +83,36 @@ function askOriginLocation() {
 function askDoesHaveKids() {
   var answer5 = prompt('Alright ' + user + ', do you think I have any kids? Please respond yes or no. ').toLowerCase();
   console.log(user + ' answered ' + answer5 + ' for question 5. ');
-  if( answer5 === 'yes' || answer5 === 'y') {
+  if ( answer5 === 'yes' || answer5 === 'y') {
     userPoints++;
     alert('You got it!!! I have a wonderful 4 year old daughter that keeps me really busy. \nYou now have ' + userPoints + ' point(s)' );
   } else {
     alert('I do in fact have a wonderful 4 year old daughter that keeps me really busy these days.  \nYou still have ' + userPoints + ' point(s)' );
   }
+
+  askMyAge();
 }
 
-// //Question 6
-//
-// for (var i = 0; i < 4; i++ ) {
-//   var myAge = parseInt(prompt('Can you guess how old I am? ' ));
-//   console.log('My age is; ' + myAge);
-//   if (myAge < 34 ) {
-//     alert ('I\'m older than that...guess again. ');
-//   } else if (myAge > 34 ) {
-//     alert ('I am not that old... guess again. ');
-//   } else if (myAge === 34 ) {
-//     userPoints++;
-//     alert ('Yay you got it! \nYou now have ' + userPoints + ' point(s). ');
-//     console.log(user + ' guessed my age = ' + myAge);
-//     i = 4;
-//   } else {
-//     alert ('Did you take a guess? ');
-//   }
-// }
+// Question 6
+function askMyAge() {
+  for (var i = 0; i < 4; i++ ) {
+    var myAge = parseInt(prompt('Can you guess how old I am? ' ));
+    console.log('My age is; ' + myAge);
+    if (myAge < 34 ) {
+      alert ('I\'m older than that...guess again. ');
+    } else if (myAge > 34 ) {
+      alert ('I am not that old... guess again. ');
+    } else if (myAge === 34 ) {
+      userPoints++;
+      alert ('Yay you got it! \nYou now have ' + userPoints + ' point(s). ');
+      console.log(user + ' guessed my age = ' + myAge);
+      i = 4;
+    } else {
+      alert ('Did you take a guess? ');
+    }
+  }
+}
+
 //
 // //Question7
 //
