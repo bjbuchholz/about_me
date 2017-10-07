@@ -111,30 +111,33 @@ function askMyAge() {
       alert ('Did you take a guess? ');
     }
   }
+
+  askFavoriteCars();
 }
 
-//
-// //Question7
-//
-// var favoriteCars = ['bmw', 'audi', 'volkswagen', 'porsche', 'jeep' ];
-// var question7Tries = 6;
-// console.log('question7 ***** ', question7);
-// var question7 = prompt('Last question, can you name one of my 5 favorite cars brands? \nYou will get 6 tries this time. ').toLowerCase();
-// console.log('My favorite car brands are: ' + favoriteCars);
-// while (question7Tries > 0) {
-//   if (favoriteCars.indexOf(question7) > - 1) {
-//     alert('Yay you got it! \nMy 5 favorite car brands are ' + favoriteCars + '\nYour final score is ' + userPoints + ' out of 7 for my game. Thanks for playing! ');
-//     console.log(user + 'guessed 1 of my favorite car brands');
-//     userPoints++;
-//     question7Tries = - 1;
-//   } else {
-//     question7Tries = question7Tries - 1;
-//     question7 = prompt('Try again. You have ' + question7Tries + ' tries left after this.').toLowerCase();
-//     console.log('User is asked question 7 again. ' + question7Tries + ' left.' );
-//   }
-// }
-//
-// if (question7Tries === 0){
-//   alert('No more tries left. My 5 favorite car brands are ' + favoriteCars);
-//   console.log('User ran out of tries. ');
-// }
+
+// Question 7
+function askFavoriteCars() {
+  var favoriteCars = ['bmw', 'audi', 'volkswagen', 'porsche', 'jeep' ];
+  var question7Tries = 6;
+  console.log('question7 ***** ', question7);
+  var question7 = prompt('Last question, can you name one of my 5 favorite cars brands? \nYou will get 6 tries this time. ').toLowerCase();
+  console.log('My favorite car brands are: ' + favoriteCars);
+  while (question7Tries > 0) {
+    if (favoriteCars.indexOf(question7) > - 1) {
+      alert('Yay you got it! \nMy 5 favorite car brands are ' + favoriteCars + '\nYour final score is ' + userPoints + ' out of 7 for my game. Thanks for playing! ');
+      console.log(user + 'guessed 1 of my favorite car brands');
+      userPoints++;
+      question7Tries = - 1;
+    } else {
+      question7Tries = question7Tries - 1;
+      question7 = prompt('Try again. You have ' + question7Tries + ' tries left after this.').toLowerCase();
+      console.log('User is asked question 7 again. ' + question7Tries + ' left.' );
+    }
+  }
+
+  if (question7Tries === 0){
+    alert('No more tries left. My 5 favorite car brands are ' + favoriteCars);
+    console.log('User ran out of tries. ');
+  }
+}
