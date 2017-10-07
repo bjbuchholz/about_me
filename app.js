@@ -19,18 +19,22 @@ function askName() {
     alert('Nice to meet you ' + user + '\nLet\'s get started. ');
   }
   console.log('The user\'s name is ' + user);
+
+  askIsCarGuy();
 }
 
-// //Question 1
-// var answer = prompt('First question, do you think I am a car guy? Please respond yes or no. ').toLowerCase();
-// console.log(user + ' answered ' + answer + ' for question 1. ');
-// if(answer === 'yes' || answer === 'y') {
-//   userPoints++;
-//   alert('You guessd right ' + user + ', I have owned 20 different cars over the past 15 years. \nYou now have ' + userPoints + ' point.');
-// } else {
-//   alert('Actually, I am a big car guy, I have had over 20 of them. “Vroom Vroom” \nYou still have ' + userPoints + ' points.');
-// }
-//
+// Question 1
+function askIsCarGuy() {
+  var answer = prompt('First question, do you think I am a car guy? Please respond yes or no. ').toLowerCase();
+  console.log(user + ' answered ' + answer + ' for question 1. ');
+  if(answer === 'yes' || answer === 'y') {
+    userPoints++;
+    alert('You guessd right ' + user + ', I have owned 20 different cars over the past 15 years. \nYou now have ' + userPoints + ' point.');
+  } else {
+    alert('Actually, I am a big car guy, I have had over 20 of them. “Vroom Vroom” \nYou still have ' + userPoints + ' points.');
+  }
+}
+
 // //Question 2
 // var answer2 = prompt('Ok ' + user + ', let\'s switch gears, do you think I like Spicy foods? Please respond yes or no. ').toLowerCase();
 // console.log(user + ' answered ' + answer2 + ' for question 2. ');
