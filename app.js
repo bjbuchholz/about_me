@@ -33,18 +33,22 @@ function askIsCarGuy() {
   } else {
     alert('Actually, I am a big car guy, I have had over 20 of them. “Vroom Vroom” \nYou still have ' + userPoints + ' points.');
   }
+
+  askIsSpicyFoodLover();
 }
 
-// //Question 2
-// var answer2 = prompt('Ok ' + user + ', let\'s switch gears, do you think I like Spicy foods? Please respond yes or no. ').toLowerCase();
-// console.log(user + ' answered ' + answer2 + ' for question 2. ');
-// if(answer2 === 'yes' || answer2 === 'y') {
-//   userPoints++;
-//   alert('That\’s correct ' + user + ', I love the "HOT" stuff. \nYou now have ' + userPoints + ' point(s).');
-// } else {
-//   alert('Actually, I do love spicy food, the spicier the better I say. \nYou still have ' + userPoints + ' point(s).');
-// }
-//
+// Question 2
+function askIsSpicyFoodLover() {
+  var answer2 = prompt('Ok ' + user + ', let\'s switch gears, do you think I like Spicy foods? Please respond yes or no. ').toLowerCase();
+  console.log(user + ' answered ' + answer2 + ' for question 2. ');
+  if(answer2 === 'yes' || answer2 === 'y') {
+    userPoints++;
+    alert('That\’s correct ' + user + ', I love the "HOT" stuff. \nYou now have ' + userPoints + ' point(s).');
+  } else {
+    alert('Actually, I do love spicy food, the spicier the better I say. \nYou still have ' + userPoints + ' point(s).');
+  }
+}
+
 // //Question 3
 // var answer3 = prompt('Do you think I am a fan of scary movies ' + user + '? Please respond yes or no. ').toLowerCase();
 // console.log(user + ' answered ' + answer3 + ' for question 3. ');
