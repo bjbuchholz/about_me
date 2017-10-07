@@ -5,17 +5,22 @@ var userPoints = 0;
 function showIntroAlert() {
   console.log('Hello');
   alert('Welcome to my guessing game!');
+
+  // show the next alert/prompt
+  askName();
 }
 
-// var user = prompt('What is your name?');
-// while (!user) {
-//   user = prompt('Before we can move on my game, I need to know your name. Please enter below! ');
-// }
-// if (user !== 'Brandon') {
-//   alert('Nice to meet you ' + user + '\nLet\'s get started. ');
-// }
-// console.log('The user\'s name is ' + user);
-// 
+function askName() {
+  var user = prompt('What is your name?');
+  while (!user) {
+    user = prompt('Before we can move on my game, I need to know your name. Please enter below! ');
+  }
+  if (user !== 'Brandon') {
+    alert('Nice to meet you ' + user + '\nLet\'s get started. ');
+  }
+  console.log('The user\'s name is ' + user);
+}
+
 // //Question 1
 // var answer = prompt('First question, do you think I am a car guy? Please respond yes or no. ').toLowerCase();
 // console.log(user + ' answered ' + answer + ' for question 1. ');
