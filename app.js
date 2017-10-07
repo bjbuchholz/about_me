@@ -1,6 +1,7 @@
 'use strict';
 
 var userPoints = 0;
+var user = "";
 
 function showIntroAlert() {
   console.log('Hello');
@@ -11,7 +12,7 @@ function showIntroAlert() {
 }
 
 function askName() {
-  var user = prompt('What is your name?');
+  user = prompt('What is your name?');
   while (!user) {
     user = prompt('Before we can move on my game, I need to know your name. Please enter below! ');
   }
